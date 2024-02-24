@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Focus & Hover Effects</title>
+    <style>
+        
+        input[type="text"] {
+            padding: 8px;
+            border: 2px solid black;
+            transition: background-color 0.3s; /* Transition for color change */
+            margin-bottom: 10px; /* Spacing */
+            color: black; 
+        }
+
+       
+        input[type="text"]:hover {
+            background-color: cyan; /* Change background color to cyan when hovered */
+        }
+
+        /* Focus Effect*/
+        input[type="text"]:focus {
+            background-color: yellow; /* Change background color to yellow when focused */
+        }
+
+        /* Effects when input */
+        input[type="text"]:not(:placeholder-shown) {
+            color: black; 
+        }
+
+        /*Input when hovered */
+        input[type="text"]:not(:placeholder-shown):hover {
+            color: red; /* Change text color to red when hovered and input has content */
+        }
+
+        /* buttons */
+        button {
+            padding: 10px 20px;
+            margin-right: 10px; /* space between buttons */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Form with Focus & Hover Effects</h2>
+
+    <form>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"><br>
+
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter your email address"><br>
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="clearFields()">Clear</button>
+    </form>
+
+    <script>
+        // Function to clear input fields
+        function clearFields() {
+            document.getElementById("lastName").value = "";
+            document.getElementById("firstName").value = "";
+            document.getElementById("email").value = "";
+        }
+    </script>
+
+</body>
+</html>
+

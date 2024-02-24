@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Credit by Amber Wilson</title>
+    <style>
+        .container {
+            position: relative;
+            width: 600px; 
+            height: 400px; 
+            background-color: pink; /* Background color */
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            animation: moveBall 10s infinite alternate;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); /* Initial shadow */
+        }
+
+        @keyframes moveBall {
+            0% {
+                left: 200px; /* Start position (center) */
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); /* Shadow at start position */
+            }
+            25% {
+                left: 100px; /* Move to the left */
+                box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5); /* Shadow to the left */
+            }
+            50% {
+                left: 500px; /* Move to the right */
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Shadow to the right */
+            }
+            75% {
+                left: 400px; /* Move back to the center */
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); /* Shadow at center */
+            }
+            100% {
+                left: 200px; /* Return to the start position */
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Shadow at start position */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="ball"></div>
+</div>
+
+</body>
+</html>

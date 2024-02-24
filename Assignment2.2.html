@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Fruits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 2px solid black; /* Added border around the whole table */
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: left;
+        }
+
+        td:hover {
+            background-color: cyan;
+            font-size: larger;
+            color: red;
+            border: 2px solid red; /* Border color change on hover */
+        }
+
+        .highlighted {
+            background-color: transparent;
+        }
+
+        .align-center {
+            text-align: center; /* Aligns the text to center */
+        }
+
+        .align-left {
+            text-align: left; /* Aligns the text to left */
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Favorite Fruits</caption>
+        <thead>
+            <tr>
+                <th class="align-center">Fruit</th>
+                <th class="align-center">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="align-left">Apple</td>
+                <td class="align-left">$0.25</td>
+            </tr>
+            <tr>
+                <td class="align-left">Orange</td>
+                <td class="align-left">$0.50</td>
+            </tr>
+            <tr>
+                <td class="align-left">Banana</td>
+                <td class="align-left">$1.00</td>
+            </tr>
+            <tr>
+                <td class="align-left">Pineapple</td>
+                <td class="align-left">$2.00</td>
+            </tr>
+            <tr>
+                <td class="align-left">Kiwi</td>
+                <td class="align-left">$0.50</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="align-center">Total</td>
+                <td colspan="1" class="align-center">$4.25</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

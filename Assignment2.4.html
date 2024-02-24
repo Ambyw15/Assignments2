@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber Wilson</title>
+    <style>
+        body {
+            background-color: green;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        /* Image changing*/
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            transition: all 0.3s ease;
+        }
+
+        .image-container img:hover {
+            cursor: pointer;
+        }
+
+        /* Hover for left photo */
+        .image-container img:nth-child(1):hover {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Hover for right photo */
+        .image-container img:nth-child(2):hover {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Hovers for links */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media query for printer-friendly version */
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            .image-container img {
+                display: none; /* Hide images when printing */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Amber Wilson</h1>
+
+    <div class="image-container">
+        <!-- Kirby 1 -->
+        <div>
+            <img src="https://play.nintendo.com/images/Masthead_Kirby.17345b1513ac044897cfc243542899dce541e8dc.9afde10b.png"
+                alt="Kirby 1">
+        </div>
+
+        <!-- Kirby 2 -->
+        <div>
+            <img src="https://play.nintendo.com/images/profile-kirby-kirby.7bf2a8f2.aead314d58b63e27.png" alt="Kirby 2">
+        </div>
+    </div>
+
+    <p style="color: black; font-size: 18px;">Click on the following links to get the website of the best colleges:</p>
+
+    <!-- University Links -->
+    <ul>
+        <li><a href="https://www.montclair.edu/" target="_blank">Montclair State University</a></li>
+        <li><a href="https://web.mit.edu/" target="_blank">Massachusetts Institute of Technology (MIT)</a></li>
+        <li><a href="https://www.princeton.edu/" target="_blank">Princeton University</a></li>
+    </ul>
+
+</body>
+
+</html>
